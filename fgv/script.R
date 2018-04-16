@@ -47,10 +47,24 @@ M[1,3]
 M[2, ]
 
 #dataframe guardam  tabelas de dados
+tabela1 <- data.frame(Nome= c("Andre","João"), Idade = c(25,45))
+tabela1
 
+#exibe apenas os nomes
+tabela1$Nome
+tabela1[1]
+#adicionar uma nova coluna
+tabela1$Salario <- c(1200)
+tabela1
 
+#rbind e cbind
 
+#remover um objeto da memoria
+remove(vetor1)
+rm (vetor2)
 
+#mostrar o objetos da memoria
+ls()
 
 
 
