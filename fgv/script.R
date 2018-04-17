@@ -66,5 +66,35 @@ rm (vetor2)
 #mostrar o objetos da memoria
 ls()
 
+tabela2 <- data.frame(Time =c("Vasco", "São Paulo"), Estado = c("RJ","SP"), pontos = c(5,10))
+tabela2
+remove(tabela2)
+
+
+
+#estrutura de condições
+a <- 1 
+b <- 2
+c <- 3
+if(a != b & b != c & c != a){
+  cat("É um triângulo escaleno")
+}else{
+  cat("Não é um triângulo escaleno")
+}
+
+a <- 2
+b <- 5
+
+if(a>b){
+  cat(a)
+}else{
+  cat(b)
+}
+
+
+ifelse(a>b, a, b)
+
+
+
 
 
