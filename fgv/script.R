@@ -119,6 +119,39 @@ media
 mean(dados)
 
 
+#criar funções
+
+#calcula a área de um triangulo
+area <- function(base, altura){
+  return ((base*altura)/2)
+}
+
+area(5,3)
+#dessa forma a ordem dos parametros não é importante
+area(altura=3, base=5)
+
+#exibe o diretorio de trabalho corrente
+getwd()
+
+#lê o dados de um data.frame
+#read.table
+#outras funções mais úteis
+#read.csv()
+#read.csv2()
+#read.delim()
+#read.delim2()
+pessoas <- read.csv(file = 'planilha.csv', header = TRUE, sep = ';', dec = ',')
+
+#para escrever em um documento
+#write.table()
+#write.csv()
+#write.csv2()
+
+
+
+
+
+
 
 
 
