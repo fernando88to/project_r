@@ -95,6 +95,30 @@ if(a>b){
 ifelse(a>b, a, b)
 
 
+# estrutura de repetição
+
+for(i in 1:5){
+  print(i^2)
+}
+
+
+#calcular a média manualmente com for
+dados <- c(10,15,9,7,6,12,17)
+n <- length(dados)
+soma <- 0
+
+for(i in 1:n){
+  soma <- dados[i]+soma
+}
+
+media <- soma/n
+media
+
+
+#função para calcular a média
+mean(dados)
+
+
 
 
 
