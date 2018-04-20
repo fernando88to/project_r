@@ -148,6 +148,95 @@ pessoas <- read.csv(file = 'planilha.csv', header = TRUE, sep = ';', dec = ',')
 #write.csv2()
 
 
+#como calcula  a media
+x <- c(10,12,11,7,8,13,9,10)
+soma <- sum(x)
+n <- length(x)
+#calcula a media
+soma/n
+
+mean(x)
+
+
+y <- c(10,12,111,7,8,13,9,10)
+mean(y)
+
+#NA indica um número que não foi capturado, ficou faltando
+z <- c(10,12,11,7,8,13,9,NA)
+mean(z)
+#desconsidera o NA
+mean(z, na.rm=T)
+
+#media
+
+b <- c(10,12,11,7,8,13,9,10)
+a <- c(10,12,111,7,8,13,9,10)
+
+mediana <- function(dados){
+  n <- length(dados)
+  dados <- sort(dados)
+  if(n%%2==0){
+    med <- (dados[n/2]+ dados[n/2+1])/2
+  }else{
+    med <- dados[(n+1)/2]
+  }
+  return(med) 
+}
+
+mediana(b)#10
+mediana(a)#10
+
+#função nativa
+median(b)
+
+
+
+
+#moda
+
+
+x1 <- c("A", "B", "C","C", "A","A")
+x2 <- c("D","B", "C", "C", "A", "A")
+x3 <- c("A", "B", "C", "C","B","A")
+
+
+tabela1 <- table(x1)
+tabela2 <- table(x2)
+tabela3 <- table(x3)
+
+#fazendo manualmente, criando uma tabela de frequência
+
+tabela1
+#bimodal
+tabela2
+#não tem moda, é a modal
+tabela3
+
+#gera 1000 número aleatorios, que vão de 10 a 500
+#dados<- runif(1000,10,500)
+#fazendo os numero aleatorios mais arredondando
+x6 <- round(runif(1000,10,500))
+x6
+
+tabela6 <- table(x6)
+tabela6
+
+
+#pega o indice que mais repete
+#max(tabela6)
+#verifica nos indique o que mais repete, o que mais repetir ele mostra true, para o outros é false
+#tabela6 == max(tabela6)
+#finalmente já pega o indice do elemento
+tabela6[ tabela6==max(tabela6) ]
+
+
+
+
+
+
+
+
+
 
 
 
