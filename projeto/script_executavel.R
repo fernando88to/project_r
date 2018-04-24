@@ -1,7 +1,7 @@
 #2414 - nascimento
 
 #leitura dos dados
-dados_registro_civil <- read.csv(file = 'registro_civil_2017.csv', header = TRUE, sep = ",", quote = "\"")
+dados_registro_civil <- read.csv(file = '/home/fernando/mestrado/project_r/fgv/registro_civil_2017.csv', header = TRUE, sep = ",", quote = "\"")
 
 
 #converte uma coluna em data
@@ -17,18 +17,7 @@ for(i in 1:nrow(dados_registro_civil)){
     total_nascimento <- total_nascimento + 1
   }
   
-  if(dados_registro_civil$ATO[i]==2411){
-    total_nascimento <- total_nascimento + 1
-  }
-  
-  if(dados_registro_civil$ATO[i]==2414){
-    total_nascimento <- total_nascimento + 1
-  }
-  
-  
 }
 
-
-
-
+total_nascimento
 
