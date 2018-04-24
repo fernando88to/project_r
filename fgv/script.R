@@ -232,6 +232,28 @@ tabela6[ tabela6==max(tabela6) ]
 
 
 
+#medidas de dispersão
+
+#variância
+#desvio padrão
+
+x <- c(2,5,7,89,32)
+#variancia
+var(x)
+#desvio
+sd(x)
+
+#tem que ser igual ao desvio padrão
+sqrt(var(x))
+
+#coeficiente de variação, é uma medida de dispersão útil, para comparar 2 ou mais conjutos de dados
+# quando estes estão em medidas diferentes
+#quanto for menor, 
+
+
+
+
+
 
 
 
