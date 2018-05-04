@@ -52,16 +52,14 @@ M[2,1]= total_nascimento
 M[3,1]= total_obito
 
 
-
-rmarkdown::render("/home/fernando/mestrado/project_r/projeto/relatoriomarkdown.Rmd", "pdf_document", output_file = paste('report.', Sys.Date(), '.pdf', sep=''), quiet = TRUE)
+nome_arquivo_pdf <-paste('report.', Sys.Date(), '.pdf', sep='')
+rmarkdown::render("/home/fernando/mestrado/project_r/projeto/relatoriomarkdown.Rmd", "pdf_document", output_file = nome_arquivo_pdf, quiet = TRUE)
 
 args = commandArgs(TRUE)
-
-args
 if (length(args)==0) {
  
-} else if (length(args)==1) {
- args
+} else if (length(args)>=1) {
+  args[1]
 }
 
                                                                                                                                       
