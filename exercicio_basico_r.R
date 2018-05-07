@@ -77,3 +77,20 @@ calcular_fatorial <- function(numero){
 calcular_fatorial(8)
 
 
+#problema 8
+  #Um número é, por definição, primo se ele não tem divisores, exceto 1 e ele próprio. Prepara um algoritmo
+      #para ler um número e verificar se este é primo ou não.
+
+verifica_numero_primo <- function(numero){
+  if(numero==1){
+    return(TRUE)
+  }else if (numero%%2==0){
+    return (TRUE)  
+  }else{
+    return(FALSE)
+  }
+}
+
+verifica_numero_primo(4)
+
+
