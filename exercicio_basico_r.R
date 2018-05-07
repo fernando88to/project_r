@@ -43,6 +43,33 @@ for(nota in as_duas_turmas_sem_nota_repetida){
   }
 }
 
+#problema 5
+  # Fazer um algoritmo para calcular e imprimir as 10 primeiras potências de 3
 
+for(indice in 1:10){
+  print(3^indice)
+}
+
+# problema 6
+  #Escreva um laço que calcula o fatorial de um inteiro n. Sugestão: usar o while.
+
+calcular_fatorial <- function(numero){
+  retorno <- 1
+  indice <- 1
+  if(numero < 0) {
+    stop("Não existe fatorial de número negativo")
+  } else if(numero == 0) {
+    #fatorial de 0 é 1
+    return(retorno)
+  }else{
+    while(indice <= numero){
+      retorno = retorno * indice
+      indice <- indice +1
+    }
+  }
+  return(retorno)
+}
+
+calcular_fatorial(8)
 
 
