@@ -53,6 +53,10 @@ for(indice in 1:10){
 # problema 6
   #Escreva um laço que calcula o fatorial de um inteiro n. Sugestão: usar o while.
 
+
+
+#problema 7
+  #Escreva um laço que calcula o fatorial de um inteiro n. Sugestão: usar o while.
 calcular_fatorial <- function(numero){
   retorno <- 1
   indice <- 1
