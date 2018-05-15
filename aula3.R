@@ -48,7 +48,7 @@ ocorrer_60_ou_mais <- sum(dbinom(3:5,5, 1/2))# checar se está certo
 
 #2) Repita o item B, agora pra 10 lançamentos
 
-#n=10 , p=0,5 k =3,4,5
+#n=10 , p=0,5 k =6,7,8,9,10
 
 x <- sum(dbinom(6:10,10, 1/2 ))
 
@@ -70,7 +70,6 @@ tres_ou_mais_itens_defeituosos <- sum(dbinom(3:10,10, 0.3))
 
 
 
-
 # exercício 4 
 # Uma companhia de seguros vendeu apólices para 5 pessoas, todas da mesma
 # idade de com boa saúde. De acordo com as tabelas atuais, a probalidade
@@ -80,6 +79,8 @@ tres_ou_mais_itens_defeituosos <- sum(dbinom(3:10,10, 0.3))
 #a) Exatamente duas pessoas estejam vivas;
 #b) Todas as pessoas estejam vivas
 #c) Pelo menos 3 pessoas estejam vivas
+
+
 
 
 
