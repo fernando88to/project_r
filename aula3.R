@@ -192,10 +192,21 @@ d1#probabilidade
 
 
 
-#(d) Se garrafas vão sendo selecionadas até aparecer uma com volume
+#(d)Se garrafas vão sendo selecionadas até aparecer uma com volume
 #de líquido superior a 1005 cm3,
 #qual é a probabilidade de que seja necessário selecionar pelo menos 
 #5 garrafas?
 
 d <- pnorm(1005, 1000, 10)
 d
+
+d1 <- pbinom(5,100,d)
+d1#probabilidade
+
+
+
+
+
+
+
+
