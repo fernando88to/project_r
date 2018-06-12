@@ -200,8 +200,14 @@ d1#probabilidade
 d <- pnorm(1005, 1000, 10)
 d
 
-d1 <- pbinom(5,100,d)
-d1#probabilidade
+#é uma distruibição geométrica
+(1-d)*100 ## sucesso é 
+
+# Exercicio 5
+
+
+
+
 
 
 
